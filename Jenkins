@@ -1,6 +1,6 @@
 node {
   stage('Checkout') {
-    git branch: 'Main', url: 'https://github.com/DhavalNetwin/AngularAutoDeploy.git' }
+    git branch: 'Master', url: 'https://github.com/DhavalNetwin/AngularAutoDeploy.git' }
 
   stage('Node install') {
       sh "npm install" 
