@@ -2,15 +2,15 @@ pipeline {
   agent none
   stages {
     stage('checkout'){
-      git url: 'https://github.com/DhavalNetwin/AngularAutoDeploy.git'
+      git branch:'master' url: 'https://github.com/DhavalNetwin/AngularAutoDeploy.git'
     }
 
-      stage('Install') {
+    stage('Install') {
       sh "npm install"
-      }
+    }
     
     stage('Build') {
       sh "npm run build --prod"
-      }
+    }
   }
 }
