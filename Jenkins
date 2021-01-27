@@ -2,7 +2,7 @@ pipeline {
   agent none
   stages {
     stage('checkout'){
-      git branch:'master' url: 'https://github.com/DhavalNetwin/AngularAutoDeploy.git'
+      checkout scm
     }
 
     stage('Install') {
